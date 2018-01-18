@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:17.10
 MAINTAINER sgguo@shao.ac.cn
 
 RUN apt-get update
