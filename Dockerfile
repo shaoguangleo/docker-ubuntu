@@ -1,8 +1,11 @@
 FROM ubuntu:17.10
-MAINTAINER sgguo@shao.ac.cn
+MAINTAINER [Guo Shaoguang] <sgguo@shao.ac.cn>
 
-RUN apt-get update -y
-RUN apt-get upgrade -y
-RUN apt-get install -y vim
-RUN apt-get install -y gcc
-RUN rm -rf /var/lib/apt/lists/*
+LABEL version="0.1"
+LABEL description="Basic Ubuntu Image"
+
+RUN apt-get update -y \ 
+    && apt-get upgrade -y \
+    && apt-get install -y vim \
+    && apt-get install -y gcc \
+    && rm -rf /var/lib/apt/lists/*
