@@ -19,3 +19,8 @@ $ docker run -it shaoguangleo/ubuntu[:version]
 ```
 
 As we all know, the version can be `lateset` or `$ cat VERSION`
+
+# travis
+
+[![Build Status](https://www.travis-ci.org/shaoguangleo/docker-ubuntu.svg?branch=master)](https://www.travis-ci.org/shaoguangleo/docker-ubuntu)
+
