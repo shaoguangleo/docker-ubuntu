@@ -16,7 +16,6 @@ The packages are selected for common use in the future.
 Just type the following commands
 
 ```
-$ make
 $ docker run -it shaoguangleo/ubuntu[:version]
 ```
 
