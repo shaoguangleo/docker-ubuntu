@@ -7,21 +7,24 @@ LABEL description="Basic Ubuntu Image"
 RUN apt-get update -y \
     && apt-get upgrade -y \
     && apt-get install -y vim \
+    && apt-get install -y python-flake8 python3-flake8 flake flake8 \
     && apt-get install -y gcc \
-    && apt-get install -y xorg-dev\
-    && apt-get install -y gfortran\
-    && apt-get install -y subversion\
-    && apt-get install -y pkg-config\
-    && apt-get install -y bison\
-    && apt-get install -y flex\
-    && apt-get install -y wget\
-    && apt-get install -y libfftw3-dev\
-    && apt-get install -y libopenmpi-dev\
-    && apt-get install -y openmpi-bin\
-    && apt-get install -y libtool\
-    && apt-get install -y automake\
-    && apt-get install -y autoconf\
-    && apt-get install -y libexpat1-dev\
-    && apt-get install -y python\
-    && apt-get install -y rpcbind\
+    && apt-get install -y xorg-dev \
+    && apt-get install -y gfortran \
+    && apt-get install -y subversion \
+    && apt-get install -y pkg-config \
+    && apt-get install -y bison \
+    && apt-get install -y flex \
+    && apt-get install -y wget \
+    && apt-get install -y curl \
+    && apt-get install -y git \
+    && apt-get install -y libfftw3-dev \
+    && apt-get install -y libopenmpi-dev \
+    && apt-get install -y openmpi-bin \
+    && apt-get install -y libtool \
+    && apt-get install -y automake \
+    && apt-get install -y autoconf \
+    && apt-get install -y libexpat1-dev \
+    && apt-get install -y python \
+    && apt-get install -y rpcbind \
     && rm -rf /var/lib/apt/lists/*
