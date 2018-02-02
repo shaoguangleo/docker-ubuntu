@@ -24,6 +24,7 @@ RUN apt-get update -y \
     && apt-get install -y libtool \
     && apt-get install -y automake \
     && apt-get install -y autoconf \
+    && apt-get install -y cmake \
     && apt-get install -y libexpat1-dev \
     && apt-get install -y python \
     && apt-get install -y rpcbind \
