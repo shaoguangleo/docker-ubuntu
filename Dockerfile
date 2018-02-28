@@ -28,4 +28,6 @@ RUN apt-get update -y \
     && apt-get install -y libexpat1-dev \
     && apt-get install -y python \
     && apt-get install -y rpcbind \
+    && apt-get install -y csh \
+    && apt-get install -y dh-autoreconf\
     && rm -rf /var/lib/apt/lists/*
