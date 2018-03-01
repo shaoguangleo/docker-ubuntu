@@ -29,5 +29,8 @@ RUN apt-get update -y \
     && apt-get install -y python \
     && apt-get install -y rpcbind \
     && apt-get install -y csh \
+    && apt-get install -y libglib2.0-dev \
     && apt-get install -y dh-autoreconf\
+    && apt-get install -y libcfitsio5 \
+    && apt-get install -y libcfitsio-dev \
     && rm -rf /var/lib/apt/lists/*
