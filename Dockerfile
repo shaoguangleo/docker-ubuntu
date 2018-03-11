@@ -35,6 +35,9 @@ RUN apt-get update -y \
     && apt-get install -y dh-autoreconf\
     && apt-get install -y libcfitsio5 \
     && apt-get install -y libcfitsio-dev \
+    && apt-get install -y python-pip \
+    && pip install numpy \
+    && pip install scipy \
     && cd /tmp \
     && tar zxvf fftw-3.3.3.tar.gz \
     && cd /tmp/fftw-3.3.3 \
