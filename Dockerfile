@@ -12,7 +12,7 @@ RUN apt-get update -y \
     && apt-get install -y python-flake8 python3-flake8 flake flake8 \
     && apt-get install -y gcc \
     && apt-get install -y xorg-dev \
-    && apt-get install -y gfortran \
+    && apt-get install -y gfortran libgfortran3 \
     && apt-get install -y subversion \
     && apt-get install -y pkg-config \
     && apt-get install -y bison \
@@ -28,13 +28,14 @@ RUN apt-get update -y \
     && apt-get install -y autoconf \
     && apt-get install -y cmake \
     && apt-get install -y libexpat1-dev \
-    && apt-get install -y python \
+    && apt-get install -y python python-dev \
     && apt-get install -y rpcbind \
     && apt-get install -y csh \
     && apt-get install -y libglib2.0-dev \
     && apt-get install -y dh-autoreconf\
     && apt-get install -y libcfitsio5 \
     && apt-get install -y libcfitsio-dev \
+    && apt-get install -y libpng-dev \
     && apt-get install -y python-pip \
     && pip install numpy \
     && pip install scipy \
